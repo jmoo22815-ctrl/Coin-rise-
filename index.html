@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CoinRise crypto portfolio concept with transparent Ethereum deposit instructions.">
+<title>CoinRise — Crypto with clarity</title>
+<style>
+:root{--bg:#090909;--panel:#141414;--gold:#d8b15a;--gold-light:#f1d48b;--text:#f5f3ee;--muted:#aaa69b;--line:#302b20;--green:#77d8a5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(1100px,calc(100% - 32px));margin:auto}
+header{border-bottom:1px solid #29251e}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-size:1.2rem;font-weight:850}.logo{display:grid;place-items:center;width:36px;height:36px;background:linear-gradient(135deg,var(--gold-light),#9d711f);color:#17120a;border-radius:11px}.links{display:flex;gap:24px;color:var(--muted);font-size:.92rem}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);background:transparent;color:var(--text);padding:11px 16px;border-radius:10px;font-weight:700;cursor:pointer}.btn.gold{background:var(--gold);color:#181208;border-color:var(--gold)}.btn:hover{filter:brightness(1.08)}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:45px;padding:76px 0 65px}.eyebrow{font-size:.76rem;text-transform:uppercase;letter-spacing:2px;color:var(--gold-light);font-weight:800}.hero h1{font-size:clamp(2.6rem,5vw,4.4rem);line-height:1.04;letter-spacing:-1.8px;margin:16px 0}.hero h1 span{color:var(--gold)}.hero p{color:var(--muted);font-size:1.04rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.preview,.panel{background:linear-gradient(145deg,#1b1914,#111);border:1px solid #40351f;border-radius:20px;padding:24px}.preview-label{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.85rem}.pill{font-size:.72rem;color:var(--gold-light);border:1px solid #584723;border-radius:99px;padding:5px 9px}.demo-balance{font-size:2rem;font-weight:850;margin-top:22px}.muted{color:var(--muted)}.chart{height:105px;margin:14px 0 20px;border-bottom:1px solid var(--line)}.chart svg{width:100%;height:100%}.assetrow{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-top:1px solid #2a261f}.coin{display:flex;align-items:center;gap:10px}.coinicon{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#2b2518;color:var(--gold-light);font-weight:800}.coin small{display:block;color:var(--muted)}.section{padding:55px 0}.sectionhead{text-align:center;max-width:680px;margin:0 auto 30px}.sectionhead h2{font-size:clamp(1.8rem,3vw,2.5rem);margin:9px 0}.sectionhead p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.feature{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:22px}.feature .icon{color:var(--gold-light);font-size:1.4rem}.feature p{color:var(--muted);font-size:.93rem}.deposit-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px;align-items:start}.deposit-box{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:23px}.deposit-box h3{margin-top:0}.network{display:inline-block;background:#1e2b21;color:#a7efc2;border:1px solid #31543a;border-radius:8px;padding:5px 9px;font-size:.78rem;font-weight:750}.address{word-break:break-all;background:#080808;border:1px solid #3b3323;padding:13px;border-radius:10px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9rem}.rowbuttons{display:flex;gap:9px;flex-wrap:wrap}.warning{background:#241d10;border:1px solid #5b4822;color:#e7d6a7;padding:13px;border-radius:10px;font-size:.88rem;margin-top:15px}.formlabel{display:block;font-size:.87rem;margin:14px 0 6px}.field{width:100%;background:#090909;color:var(--text);border:1px solid #393329;border-radius:9px;padding:12px}.formnote{font-size:.82rem;color:var(--muted)}.status{display:none;border:1px solid #31543a;background:#142219;color:#b5f2ca;padding:12px;border-radius:10px;margin-top:12px;font-size:.88rem}.status.show{display:block}.disclaimer{border:1px solid #514122;background:#17140d;border-radius:13px;padding:17px;color:#d8c99e;font-size:.88rem}footer{margin-top:48px;border-top:1px solid #29251e;padding:24px 0;color:var(--muted);font-size:.82rem}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@media(max-width:800px){.hero,.deposit-wrap{grid-template-columns:1fr}.hero{padding-top:50px}.grid{grid-template-columns:1fr}.links{display:none}.preview{max-width:600px}.section{padding:40px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#"><span class="logo">C</span><span>CoinRise</span></a>
+<nav class="links"><a href="#how">How it works</a><a href="#deposit">ETH deposit</a><a href="#risks">Risk notice</a></nav>
+<a class="btn gold" href="#deposit">Deposit ETH</a>
+</div></header>
+<main>
+<section class="wrap hero">
+<div>
+<div class="eyebrow">Crypto, with clarity</div>
+<h1>Make your next move with <span>more clarity.</span></h1>
+<p>Explore crypto assets and keep your activity organized in one simple place. Read the risks before you send any funds.</p>
+<div class="actions"><a class="btn gold" href="#deposit">View ETH deposit details ↗</a><a class="btn" href="#how">How it works</a></div>
+<p style="font-size:.82rem">Website prototype. It does not execute trades, custody assets, or calculate live portfolio returns.</p>
+</div>
+<div class="preview">
+<div class="preview-label"><span>Portfolio overview</span><span class="pill">ILLUSTRATIVE DEMO</span></div>
+<div class="demo-balance">$0.00</div><div class="muted" style="font-size:.82rem">Demo balance · no real funds shown</div>
+<div class="chart"><svg viewBox="0 0 500 105" preserveAspectRatio="none" aria-label="Illustrative chart"><defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#d8b15a" stop-opacity=".3"/><stop offset="1" stop-color="#d8b15a" stop-opacity="0"/></linearGradient></defs><path d="M0 88 C35 78 48 83 74 61 S115 77 144 52 S185 63 220 40 S260 57 293 33 S333 46 367 25 S410 40 444 15 S475 23 500 7 L500 105 L0 105Z" fill="url(#fill)"/><path d="M0 88 C35 78 48 83 74 61 S115 77 144 52 S185 63 220 40 S260 57 293 33 S333 46 367 25 S410 40 444 15 S475 23 500 7" fill="none" stroke="#d8b15a" stroke-width="3"/></svg></div>
+<div class="assetrow"><div class="coin"><span class="coinicon">Ξ</span><div><b>Ethereum</b><small>ETH · Ethereum mainnet</small></div></div><b>—</b></div>
+<div class="assetrow"><div class="coin"><span class="coinicon">₿</span><div><b>Bitcoin</b><small>BTC · Watchlist concept</small></div></div><b>—</b></div>
+</div>
+</section>
+<section class="section" id="how"><div class="wrap">
+<div class="sectionhead"><div class="eyebrow">Simple by design</div><h2>Know what happens before you send</h2><p>Crypto transfers are generally irreversible. Check the network and address carefully every time.</p></div>
+<div class="grid">
+<div class="feature"><div class="icon">01 / Understand</div><h3>Review the asset</h3><p>This prototype accepts instructions for native ETH on Ethereum mainnet only. It is not a USDT deposit page.</p></div>
+<div class="feature"><div class="icon">02 / Verify</div><h3>Double-check details</h3><p>Confirm the address independently and test with a small amount first if you decide to proceed.</p></div>
+<div class="feature"><div class="icon">03 / Keep records</div><h3>Save the transaction hash</h3><p>A transaction hash can help identify a transfer. Submitting a hash here does not verify or credit a deposit.</p></div>
+</div></div></section>
+<section class="section" id="deposit"><div class="wrap">
+<div class="sectionhead"><div class="eyebrow">Deposit information</div><h2>Ethereum (ETH) deposit address</h2><p>Only send native ETH using the Ethereum mainnet. Sending the wrong asset or using the wrong network may result in permanent loss.</p></div>
+<div class="deposit-wrap">
+<div class="deposit-box"><h3>Send ETH</h3><span class="network">Ethereum Mainnet · ETH only</span>
+<div class="address" id="wallet">0xEbbce896369F96E9e1c2df2ad0afE4D5BFaA1e82</div>
+<div class="rowbuttons"><button class="btn gold" id="copyBtn">Copy wallet address</button><button class="btn" id="showConfirm">Show safety checklist</button></div>
+<div class="warning"><b>Important:</b> This address was supplied by the site operator and has not been independently verified. Confirm you control it and understand who receives the funds before publishing this page.</div>
+<div class="status" id="copyStatus" role="status"></div>
+</div>
+<div class="deposit-box"><h3>Record a transfer (prototype only)</h3><p class="formnote">This form does not connect to a blockchain, verify payment, or add funds to any account. It only demonstrates the interface.</p>
+<form id="txForm">
+<label class="formlabel" for="txhash">Transaction hash (optional)</label><input class="field" id="txhash" placeholder="Paste your transaction hash" autocomplete="off">
+<label class="formlabel" for="amount">Amount sent (ETH)</label><input class="field" id="amount" type="number" min="0" step="any" placeholder="e.g. 0.01">
+<label class="formlabel" for="email">Contact email (optional)</label><input class="field" id="email" type="email" placeholder="you@example.com">
+<button class="btn gold" style="margin-top:16px;width:100%" type="submit">Submit demo record</button>
+<div class="status" id="formStatus" role="status"></div>
+</form>
+</div></div>
+</div></section>
+<section class="section" id="risks"><div class="wrap"><div class="disclaimer"><b>Risk and trust notice:</b> Cryptocurrency prices can rise or fall sharply, and you may lose all the money you invest. This static website is a front-end prototype only: no account system, secure database, live pricing, custody, investment execution, or automatic deposit verification is connected. Do not advertise guaranteed profits. Before accepting public deposits or managing investments for other people, obtain qualified legal/compliance advice and implement appropriate authorization, custody, security, disclosures, and transaction monitoring.</div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© 2026 CoinRise · Prototype</span><span>Crypto involves risk. Verify all transfer details before sending.</span></div></footer>
+<script>
+const address = document.getElementById('wallet').textContent.trim();
+const copyStatus = document.getElementById('copyStatus');
+document.getElementById('copyBtn').addEventListener('click', async () => {
+  try { await navigator.clipboard.writeText(address); copyStatus.textContent = 'Address copied. Before sending, verify the address and Ethereum mainnet in your wallet.'; }
+  catch(e) { copyStatus.textContent = 'Copy is unavailable in this browser. Press and hold the address to copy it manually.'; }
+  copyStatus.classList.add('show');
+});
+document.getElementById('showConfirm').addEventListener('click', () => {
+  copyStatus.textContent = 'Checklist: (1) confirm the recipient address independently, (2) choose Ethereum mainnet, (3) send native ETH only, (4) understand that transfers are generally irreversible, (5) never share your wallet seed phrase or private key.';
+  copyStatus.classList.add('show');
+});
+document.getElementById('txForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const s = document.getElementById('formStatus');
+  s.textContent = 'Demo only: no transaction was checked, stored, or credited. A production site needs secure backend verification before any balance can change.';
+  s.classList.add('show');
+});
+</script>
+</body>
+</html>
